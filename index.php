@@ -1,5 +1,4 @@
-<?php
-include "vurl.php";
+<?php include "vurl.php";
 if($vi == "" || $vi == "tos" || $vi == "report"){ ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -38,7 +37,7 @@ if($vi == "" || $vi == "tos" || $vi == "report"){ ?>
       "url"=>$_POST["url"]
     );
         
-    curl_setopt($ch, CURLOPT_URL, "[SERVER]/new");
+    curl_setopt($ch, CURLOPT_URL, $_ENV["backend"]."/new");
     curl_setopt($ch, CURLOPT_POST, true);
     curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -91,7 +90,7 @@ if($vi == "" || $vi == "tos" || $vi == "report"){ ?>
       "report"=>"http://od.dyn/" . $_POST["url"] . "\n" . $_POST["why"]
     );
 
-    curl_setopt($ch, CURLOPT_URL, "[SERVER]/report");
+    curl_setopt($ch, CURLOPT_URL, $_ENV["backend"]."/report");
     curl_setopt($ch, CURLOPT_POST, true);
     curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -115,7 +114,7 @@ if($vi == "" || $vi == "tos" || $vi == "report"){ ?>
       "id"=>$vi
     );
         
-    curl_setopt($ch, CURLOPT_URL, "[SERVER]/url");
+    curl_setopt($ch, CURLOPT_URL, $_ENV["backend"]."/url");
     curl_setopt($ch, CURLOPT_POST, true);
     curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
