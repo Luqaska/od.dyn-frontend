@@ -71,7 +71,7 @@ if($vi == "" || $vi == "tos" || $vi == "report"){ ?>
 <div class="container" id="tos">
   <h2>Od.dyn's Terms of Service</h2>
   <h3>Before getting started</h3>
-  <p>When we refer as "we", "our" or "us", we're talking about principally Lucas Tjor, but also our third party companies that help hosting this service. And when we will refer as "you" or "user(s)", we are talking about, you as a user.</p>
+  <p>When we refer as "we", "our" or "us", we're talking about principally Luqaska, but also our third party companies that help hosting this service. And when we will refer as "you" or "user(s)", we are talking about, you as a user.</p>
   <h3>What we expect you to do</h3>
   <p>We espect you to not use this service for short URLs...</p>
   <ul>
