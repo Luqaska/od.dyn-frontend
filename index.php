@@ -45,7 +45,7 @@ if($vi == "" || $vi == "tos" || $vi == "report"){ ?>
     if($response){
       $response = json_decode($response);
       if(!$response->{"error"}){
-        $msg = '<p><a href="http://od.dyn/'.$response->{"url"}.'">http://od.dyn/'.$response->{"url"}.'</a></p>';
+        $msg = '<p><a href="http://od.dyn/'.$response->{"id"}.'">http://od.dyn/'.$response->{"id"}.'</a></p>';
       }else{
         $msg = '<p style="color:red">';
         if($response->{"code"}==2){
